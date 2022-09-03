@@ -86,7 +86,7 @@ font-weight: bold;
     padding: 20vh 5vw 20vh 5vw;
 }
 .arrowgif{
-
+    cursor: pointer;
     height:5%;
     width: 5%
 }
@@ -130,6 +130,7 @@ width: 100%;
     justify-content: space-around;
 }
 .moreinfo{
+    cursor: pointer;
     width: 18%;
     padding: 2% 4%;
     border-radius: 5px;
@@ -155,4 +156,56 @@ width: 100%;
 }
 .paragraph{
     color:grey;
+}
+.vision{
+    background: url("./BDDimages/parallax-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    flex-direction:column;
+    justify-content: center;
+    align-self: center;
+    padding: 10vh 0;
+    box-sizing: border-box;
+}
+.explore{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.video{
+    background: url("./BDDimages/video-3.jpg");
+    background-size: 55%;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.circle{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform .2s;
+    position:absolute;
+}
+.rightarrow{
+
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #3498DB ;
+    position:absolute;
 }
