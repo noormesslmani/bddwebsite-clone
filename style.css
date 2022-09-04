@@ -211,12 +211,14 @@ width: 100%;
 }
 .join{
     padding-top: 10vh;
+    padding-bottom: 20vh;
     flex-direction: column;
+    padding-right: 2vw;
     
 }
-.columns{
-    justify-content: space-around;
-}
+/*.columns{
+    justify-content: space-between;
+}*/
 
 .joinheader{
     font-weight: bold;
@@ -230,14 +232,14 @@ width: 100%;
 
 .joinBDD{
     width:15vw;
-    height: 110vh;
+    height: 115vh;
     border-radius: 2%;
     background-color: #F2F3F4;
     padding-top: 4%;
     padding-left: 3%;
     padding-right: 5%;
     box-sizing: border-box;
-    margin: 1%;
+    margin: 1vw;
     flex-direction: column;
 
 }
@@ -260,6 +262,28 @@ width: 100%;
 }
 .downloadapp{
     text-align: right;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    color: grey;
 }
+.end{
+    justify-content: flex-end;
+}
+.store{
+    width: 9vw;
+    height: 6vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.knowmore{
+    margin-top: 10vh;
+    padding: 14px;
+    width: 13vw;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    }
 
 
