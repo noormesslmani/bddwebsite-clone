@@ -28,7 +28,7 @@ display: flex;
 /*center them horizontally and vertically*/
 justify-content: center;
 align-items: center;
-font-size: 15px;
+font-size: 1.4vmax;
 color:black;
 font-weight: bold;
 }
@@ -43,18 +43,31 @@ font-weight: bold;
     margin-right: 0px;
     }
 .btn {
-    padding: 14px 15px;
+    width: 7vmax;
+    height: 3vmax;
+    padding: 5%;
     border: none;
     border-radius: 20px;
-    }
+}
     
 .btn-blue {
 background-color: cornflowerblue;
 color: #fff;
 font-weight: bold;
+font-size: 70%;
 }
 .flex{
     display:flex;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+.aligncenter{
+    align-items: center;
+}
+.logo{
+    width: 6vmax;
+    height: 10vmax;
 }
 
 .arrow{
@@ -131,16 +144,18 @@ width: 100%;
 }
 .moreinfo{
     cursor: pointer;
-    width: 18%;
+    width: 18vw;
     padding: 2% 4%;
     border-radius: 5px;
-    height: 75vh;
+    height: 80vh;
     background-color: #fff;
     color:black;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 10vh;
+    overflow: hidden;
 }
 .image{
     height:20%;
@@ -151,11 +166,12 @@ width: 100%;
 }
 .title{
     color: black;
-    font-size: 20px;
+    font-size: 4vmin;
     font-weight: bold;
 }
 .paragraph{
     color:grey;
+    font-size: 2.7vmin;
 }
 .vision{
     background: url("./BDDimages/parallax-4.jpg");
@@ -209,20 +225,21 @@ width: 100%;
     border-left: 12px solid #3498DB ;
     position:absolute;
 }
+
+
 .join{
     padding-top: 10vh;
     padding-bottom: 20vh;
     flex-direction: column;
     padding-right: 2vw;
     
+    
 }
-/*.columns{
-    justify-content: space-between;
-}*/
+
 
 .joinheader{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5vmax;
     text-align: center;
     margin-bottom: 2%;
 }
@@ -234,7 +251,7 @@ width: 100%;
     width:15vw;
     height: 115vh;
     border-radius: 2%;
-    background-color: #F2F3F4;
+    background-color: #F7F9F9;
     padding-top: 4%;
     padding-left: 3%;
     padding-right: 5%;
@@ -248,13 +265,13 @@ width: 100%;
     flex-direction: column;
 }
 .listtitle{
-    font-size: 18px;
+    font-size: 3vmin;
     font-weight: bold;
 }
 .listElement{
-    color: grey;
+    color: #515A5A;
     margin-top: 15%;
-    font-size: 17px;
+    font-size: 2.5vmin;
 }
 .bullet{
     height: 15px;
@@ -262,8 +279,8 @@ width: 100%;
 }
 .downloadapp{
     text-align: right;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
     font-weight: bold;
     color: grey;
 }
@@ -279,11 +296,197 @@ width: 100%;
 
 .knowmore{
     margin-top: 10vh;
-    padding: 14px;
-    width: 13vw;
+    padding: 3%;
+    width: 180%;
+    height: 7%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    }
+    font-size: 2.5vmin;
+    z-index: 1;
+}
 
+
+.stat{
+    flex-direction: column;
+    text-align: center;
+    background: url("./BDDimages/parallax-light.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -54px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10vh;
+    
+}
+.statheader{
+    margin-bottom: 2.5rem;
+    font-family: 'TheMixSemiBold';
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: #212121;
+    text-align: center;
+}
+.staticons{
+    justify-content: space-around;
+    padding: 1max;
+}
+.homeicon{
+    width: 6vw;
+    height: 15vh;
+}
+.statinfo{
+    flex-direction: column;
+    width: 20vh;
+    align-items: center;
+    text-align: center;
+    padding: 0vh 6vmax;
+}
+
+.members{
+    -webkit-text-stroke-color: #009a9e;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.events{
+    -webkit-text-stroke-color: #e13870;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.support{
+    -webkit-text-stroke-color: #0078be;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+
+}
+.percentage{
+    -webkit-text-stroke-color: #00802d;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.stattext{
+    color: #333;
+    text-align: center;
+    font-size: 2.5vmin;
+    font-weight: bolder;
+}
+
+
+.programs{
+    background: url("./BDDimages/parallax-7.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: 50% -54px;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10vh;
+    flex-direction: column;
+    align-items: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    width: 100%;
+}
+.academy{
+    width: 30%;
+    flex-direction: column;
+}
+.learning{
+    width: 12%;
+    flex-direction: column;
+    align-items: center;
+}
+.academysection{
+    height:15vh;
+    width: 15vh;
+}
+.size{
+    height:15vh;
+    width: 15vh;
+}
+.icontitle{
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+.academytext{
+    font-size: 3vmin;
+    margin-top: 2vh;
+}
+
+.clickprograms {
+    width:30vmax;
+    height: 5vmax;
+    padding: 1%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+
+.visitblog{
+    width:15%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+
+.trending{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
 
