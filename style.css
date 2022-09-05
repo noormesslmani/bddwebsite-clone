@@ -1,0 +1,625 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* flex */
+.flex{
+    display:flex;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+.aligncenter{
+    align-items: center;
+}
+.end{
+    justify-content: flex-end;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+/*****************************/
+
+/*Hero section*/
+img {
+    height: 120%;
+}
+.top-nav {
+    height: 80px;
+    box-sizing: border-box;   
+}
+li{
+    cursor: pointer;
+}
+.links {
+list-style: none; 
+align-items: center;
+font-size: 1.15vmax;
+color:white;
+font-weight: bold;
+}
+.links > li {
+    margin-right: 20px;
+}
+.links > li:last-child {
+    margin-right: 0px;
+}
+.btn-joinus {
+    width: 7vmax;
+    height: 3vmax;
+    padding: 5%;
+    border: none;
+    border-radius: 20px;
+}
+.btn-blue {
+background-color: cornflowerblue;
+color: #fff;
+font-weight: bold;
+font-size: 70%;
+}
+.logo{
+    width: 6vmax;
+    height: 10vmax;
+}
+.arrow{
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid black;
+    align-self: center;
+    margin-left: 2px;
+}
+.hero {
+    background: url("./BDDimages/slide1.jpg");
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+.hero-content {
+    align-items: center;
+    padding: 20vh 5vw 20vh 5vw;
+}
+.arrowgif{
+    cursor: pointer;
+    height:5%;
+    width: 5%
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 50px 10px 70px 10px ;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.dot:hover{
+    background-color:blue;
+}
+.hero-heading {
+    text-align: center;
+    font-size: 50px;  
+}
+.container {
+padding: 3vh 5vw;
+width: 100%;
+}
+/*****************************/
+
+
+/* foundations section*/
+.foundations{
+    padding: 30px 0px;
+    background-color:#F2F3F4;
+}
+.foundationsheading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.moreinfo{
+    cursor: pointer;
+    width: 18vw;
+    padding: 2% 4%;
+    border-radius: 5px;
+    width: 220px;
+    flex-grow: 1;
+    background-color: #fff;
+    color:black;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2vmin;
+    margin-bottom: 10vh;
+    overflow: hidden;
+}
+.image{
+    height:20%;
+    width:100%;
+}
+.childmargin{
+    margin-bottom: 15%;
+}
+.title{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.paragraph{
+    color:grey;
+    font-size: 15px;
+}
+/****************************/
+
+/*vision section*/
+.vision{
+    background: url("./BDDimages/parallax-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    flex-direction:column;
+    justify-content: center;
+    align-self: center;
+    padding: 10vh 0;
+    box-sizing: border-box;
+}
+.explore{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.video{
+    background: url("./BDDimages/video-3.jpg");
+    background-size: 55%;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.circle{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform .2s;
+    position:absolute;
+}
+.rightarrow{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #3498DB ;
+    position:absolute;
+}
+/****************************/
+
+/*join BDD section*/
+.join{
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    flex-direction: column;
+    padding-right: 2vw;   
+}
+.joinheader{
+    font-weight: bold;
+    font-size: 2.5vmax;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.joinbddimage{
+    width: 30%;
+}
+.join-column{
+    flex-wrap: wrap;
+}
+.joinBDD{
+    flex-grow: 1;
+    width:150px;
+    border-radius: 2%;
+    background-color: #F7F9F9;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    margin: 1vw;
+    flex-direction: column;
+}
+.joinBDDlist{
+    list-style: none; /*removes bottuns*/
+    flex-direction: column;
+}
+.listtitle{
+    font-size: 3vh;
+    font-weight: bold;
+}
+.listElement{
+    color: #515A5A;
+    margin-top: 15%;
+    font-size: 2.8vh;
+}
+.bullet{
+    height: 15px;
+    width: 15px;
+}
+.downloadapp{
+    text-align: right;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    font-weight: bold;
+    color: grey;
+}
+.store{
+    width: 9vw;
+    height: 6vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+/* know more bottun*/
+.knowmore{
+    margin-top: 10vh;
+    padding: 3%;
+    width: 15vw;
+    height: 7vh;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2.2vmin;
+    z-index: 1;
+}
+/****************************/
+
+/*Stat section*/
+.stat{
+    text-align: center;
+    background: url("./BDDimages/parallax-light.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -54px;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10vh;    
+}
+.statheader{
+    margin-bottom: 2.5rem;
+    font-family: 'TheMixSemiBold';
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: #212121;
+    text-align: center;
+}
+.staticons{
+    padding: 1max;
+}
+.homeicon{
+    width: 6vw;
+    height: 15vh;
+}
+.statinfo{
+    width: 20vh;
+    align-items: center;
+    text-align: center;
+    padding: 0vh 6vmax;
+    margin: 0vh 5vw;
+}
+.members{
+    -webkit-text-stroke-color: #009a9e;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.events{
+    -webkit-text-stroke-color: #e13870;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.support{
+    -webkit-text-stroke-color: #0078be;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+
+}
+.percentage{
+    -webkit-text-stroke-color: #00802d;
+    -webkit-text-size-adjust: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+    -webkit-text-stroke-width: 2px;
+    font-family: The Mix Black;
+    font-size: 6vh;
+    font-weight: bolder;
+    color: transparent;
+}
+.stattext{
+    color: #333;
+    text-align: center;
+    font-size: 2.5vmin;
+    font-weight: bolder;
+}
+/****************************/
+
+/*What's trending*/
+.visitblog{
+    width:15%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+.trending{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+/****************************/
+
+
+/*programs section*/
+.programs{
+    flex-grow: 1;
+    background: url("./BDDimages/parallax-7.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: 50% -54px;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10vh;
+    flex-direction: column;
+    align-items: center;
+}
+.academy{
+    flex-grow: 1;
+    width:350px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.learning{
+    flex-grow: 1;
+    margin: 7px;
+    align-items: center;
+}
+.academysection{
+    height:15vh;
+    width: 15vh;
+}
+.size{
+    height:15vh;
+    width: 15vh;
+}
+.icontitle{
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+.academytext{
+    font-size: 3vmin;
+    margin-top: 2vh;
+}
+.clickprograms {
+    width:30vmax;
+    height: 3.6vmax;
+    padding: 1%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    margin-top: 5vh;
+}
+/****************************/
+
+
+/*footer section*/
+footer{
+    width:100vw;
+    background-color: #212121;
+    padding: 10vh 4vw;
+}
+.footer-titles{
+    color: gainsboro;
+    padding-right: 7vw;
+    font-weight: bold;
+    margin-left: 3vw;
+}
+.footer-list{
+    list-style: none;
+    padding-left: 1vw;
+    color: white; 
+}
+.footerlist-ele{
+    margin-top: 2vh;
+    font-size: 2.5vmin;
+    letter-spacing: 1px;
+}
+.list-title{
+    color:gray;
+    font-size: 2.8vmin;
+    font-weight: bolder;
+    margin-top: 4vh;
+}
+.email{
+    width: 30%;
+}
+
+.give-margin{
+    margin-right: 50px;
+}
+.subscribe {
+    width:8vmax;
+    height: 3vmax;
+    padding: 1%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin-top: 3vh;
+    align-self: flex-end;
+    z-index: 1;
+    position: absolute;
+}
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    margin-top: 13%;
+    margin-bottom: 5%;
+}
+input[type="text"]::placeholder {  
+    padding-left: 5%;
+} 
+.contact{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.7vmin;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.fa{
+    color: #0078BE;
+    height: 1.1rem;
+    width: 20px;
+    text-align: left;
+    margin-right: 3%;
+    display: inline-block;
+    font-size: inherit;
+    margin-bottom: 5%;
+}
+.download-app{
+    color:#646464;
+    font-family: TheMixBlackPlain;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+.store-footer{
+    width: 12vw;
+    height: 8vh;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+.policy{
+    color:#f9f9f9;
+    letter-spacing: 1px;
+    font-family: TheMixSemiBold;
+    font-weight: bold;
+    font-size: 1vmax;
+    margin-right: 5%;
+}
+.fa-style{
+    color:#f9f9f9;
+    margin-left: 1.5vw;
+    margin-top: 7vh;
+    
+}
+.left-bottom{
+    margin-top: 7vh;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 2.2vh;
+}
+/**************************/
+
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+    .mobile-btn-knowmore{
+        width: 150px;
+        height:35px;
+        font-size: 15px;
+    }
+    .mobile-btn-visitblog{
+        width: 250px;
+        font-size: 15px;
+    }
+    .mobile-btn-clickprogram{
+        width: 230px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .mobile-column{
+        flex-direction: column;
+    }
+    .mobile-row{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-hide{
+        display:none;
+    }
+    
+}
