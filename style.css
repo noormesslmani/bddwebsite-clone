@@ -27,6 +27,12 @@
 .center{
     justify-content: center;
 }
+.flex-grow{
+    flex-grow: 1;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 /*****************************/
 
 /*Hero section*/
@@ -137,13 +143,15 @@ width: 100%;
     width: 18vw;
     padding: 2% 4%;
     border-radius: 5px;
-    height: 80vh;
+    width: 220px;
+    flex-grow: 1;
     background-color: #fff;
     color:black;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin: 2vmin;
     margin-bottom: 10vh;
     overflow: hidden;
 }
@@ -156,12 +164,12 @@ width: 100%;
 }
 .title{
     color: black;
-    font-size: 4vh;
+    font-size: 18px;
     font-weight: bold;
 }
 .paragraph{
     color:grey;
-    font-size: 2.9vh;
+    font-size: 15px;
 }
 /****************************/
 
@@ -235,10 +243,12 @@ width: 100%;
 .joinbddimage{
     width: 30%;
 }
-
+.join-column{
+    flex-wrap: wrap;
+}
 .joinBDD{
-    width:15vw;
-    height: 115vh;
+    flex-grow: 1;
+    width:150px;
     border-radius: 2%;
     background-color: #F7F9F9;
     padding-top: 4%;
@@ -282,12 +292,12 @@ width: 100%;
 .knowmore{
     margin-top: 10vh;
     padding: 3%;
-    width: 180%;
-    height: 7%;
+    width: 15vw;
+    height: 7vh;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 2.5vh;
+    font-size: 2.2vmin;
     z-index: 1;
 }
 /****************************/
@@ -413,6 +423,7 @@ width: 100%;
 
 /*programs section*/
 .programs{
+    flex-grow: 1;
     background: url("./BDDimages/parallax-7.jpg");
     opacity: 0.9;
     background-repeat: no-repeat;
@@ -428,11 +439,14 @@ width: 100%;
     align-items: center;
 }
 .academy{
-    width: 35%;
-    margin-left: 6vw;
+    flex-grow: 1;
+    width:350px;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
 .learning{
-    width: 18%;
+    flex-grow: 1;
+    margin: 7px;
     align-items: center;
 }
 .academysection{
@@ -583,19 +597,17 @@ input[type="text"]::placeholder {
 /* Media Query */
 
 @media only screen and (max-width: 800px) {
-    .mobile {
-        flex-direction: column;
-    }
-    .mobile-width{
-        width:60vw;
-        margin-left: 20vw;
-        font-weight: bolder;
-    }
     .mobile-btn{
-        width: 20vw;
+        width: 40vw;
+        height: 10vh;
+        font-size: 15px;
     }
     .mobile-btn2{
         width: 50vw;
+        font-size: 15px;
+    }
+    .mobile-column{
+        flex-direction: column;
     }
     .mobile-row{
         display: flex;
