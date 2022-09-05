@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +11,12 @@
   </head>
   
   <body>
-    
+    <!--Start Hero Section-->
     <div class="hero container">
         <!-- Start Navigation Bar -->
-        <nav class="top-nav">
+        <nav class="top-nav flex space-between">
             <img src="./BDDimages/logo-light.png" alt="Logo Image" class="logo" />
-            <ul class="links">
+            <ul class="links flex center">
             <li class="flex"><span>DISCOVER BDD </span><div class="arrow"></div>
             </li>
             <li class="flex"><span>OUR PRODUCTS AND SERVICES</span> <div class="arrow"></div>
@@ -23,13 +25,13 @@
             <li><span>ACADEMY</span></li>
             <li><span>BLOG</span></li>
             <li><span>WORK WITH US<span></li>
-            <li><button class="btn btn-blue">JOIN US</button></li>
+            <li><button class="btn-joinus btn-blue">JOIN US</button></li>
             </ul>
         </nav>
         <!-- End Navigation Bar -->
 
         <!-- Start Hero Content -->
-        <section class="hero-content">
+        <section class="hero-content flex flexcolumn center">
             <h1 class="hero-heading">
             A UNIQUE CLUSTER OF INNOVATION DESIGNED FOR THE DIGITAL & CREATIVE COMMUNITY
             </h1>
@@ -50,41 +52,44 @@
         </section> 
         <!-- End Hero Content -->
     </div>
+    <!--Start Hero Section-->
+
 
     <!--Start foundations page-->
     <div class="foundations">
-        
         <h1 class="foundationsheading">BDD IS BUILT ON FIVE SOLID FOUNDATIONS</h1>
-        <div class="info">
-            <div class="flex moreinfo">
-                <img class="childmargin image" src="./BDDimages/1.png" alt="arrow" />
+        <div class="flex space-around mobile">
+            <div class="flex moreinfo mobile-width">
+                <img class="childmargin image" src="./BDDimages/1.png" alt="icon" />
                 <p class="childmargin title">Community</p>
                 <p class="paragraph">An environment catering to creative minds, providing the framework for ambitious and sustainable communities. BDD creates a community for collaboration, facilitates the sharing of ideas and connects decision makers with entrepreneurs.</p>
                 
             </div>
-            <div class="flex moreinfo">
-                <img class="childmargin image" src="./BDDimages/2.png" alt="arrow" />
+            <div class="flex moreinfo mobile-width">
+                <img class="childmargin image" src="./BDDimages/2.png" alt="icon" />
                 <p class="childmargin title" >Sharing Economy</p>
                 <p class="paragraph">A business district providing value added services and cutting edge facilities for developing, producing and exchanging innovative tools and applications.</p>
             </div>
-            <div class="flex moreinfo">
-                <img class="childmargin image" src="./BDDimages/5.png" alt="arrow" />
+            <div class="flex moreinfo mobile-width">
+                <img class="childmargin image" src="./BDDimages/5.png" alt="icon" />
                 <p class="childmargin title">Smart Design</p>
                 <p class="paragraph">A new urban topography that reflects the creative community with innovative and ground breaking architecture seamlessly integrating the latest technological solutions.</p>
             </div>
-            <div class="flex moreinfo">
-                <img class="childmargin image" src="./BDDimages/3.png" alt="arrow" />
+            <div class="flex moreinfo mobile-width">
+                <img class="childmargin image" src="./BDDimages/3.png" alt="icon" />
                 <p class="childmargin title">Sustainability</p>
                 <p class="paragraph">An urban environment focused on minimizing primary energy consumption and reducing the impact of the built environment on human health and nature, with the aim of achieving LEED silver rating.</p>
             </div>
-            <div class="flex moreinfo">
-                <img class="childmargin image" src="./BDDimages/4.png" alt="arrow" />
+            <div class="flex moreinfo mobile-width">
+                <img class="childmargin image" src="./BDDimages/4.png" alt="icon" />
                 <p class="childmargin title">Social Well Being</p>
                 <p class="paragraph">A high tech and high quality environment that allows new ways of working and promotes change for more flexible work practices and lifestyles.</p>
             </div>
         </div>
     </div>
     <!--End foundations page-->
+
+    
     <!--Start vision page-->
     <div class="flex vision">
         <div class="explore">
@@ -102,9 +107,9 @@
 
         <h1 class="joinheader">JOIN BDD</h1>
 
-        <div class="flex">
-            <img class="joinbddimage" src="./BDDimages/join-bdd-1.png" alt="joinBDD" />
-            <div class="flex joinBDD">
+        <div class="flex mobile">
+            <img class="joinbddimage mobile-width" src="./BDDimages/join-bdd-1.png" alt="joinBDD" />
+            <div class="flex joinBDD mobile-width">
             <p class="listtitle">PRIVATE OFFICES</p>
             <ul class="flex joinBDDlist">
                 <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet" />
@@ -112,9 +117,9 @@
                 <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet" />Customizable offices for medium to large companies</li>
                 <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet" />Investment opportunities in premium commercial real estate</li>
             </ul>
-            <button class="btn-blue knowmore">KNOW MORE</button>
-        </div>
-            <div class="flex joinBDD">
+            <button class="btn-blue knowmore mobile-btn">KNOW MORE</button>
+            </div>
+            <div class="flex joinBDD mobile-width">
                 <p class="listtitle">MEMBERSHIP PLANS TO OUR HOT DESKS</p>
                 <ul class="flex joinBDDlist">
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet" />Day and weekly passes</li>
@@ -123,9 +128,9 @@
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>The Happy Committer</li>
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>The Dedicated</li>
                 </ul>
-                <button class="btn-blue knowmore">KNOW MORE</button>
+                <button class="btn-blue knowmore mobile-btn">KNOW MORE</button>
             </div>
-            <div class="flex joinBDD">
+            <div class="flex joinBDD mobile-width">
                 <p class="listtitle">MEETING & EVENT SPACES</p>
                 <ul class="flex joinBDDlist">
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>Four fully equipped meeting rooms, up to 12 people</li>
@@ -134,15 +139,15 @@
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>Rooftop</li>
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>Garden</li>
                 </ul>
-                <button class="btn-blue knowmore">KNOW MORE</button>
+                <button class="btn-blue knowmore mobile-btn">KNOW MORE</button>
             </div>
-            <div class="flex joinBDD">
+            <div class="flex joinBDD mobile-width">
                 <p class="listtitle">VIRTUAL OFFICES</p>
                 <ul class="flex joinBDDlist">
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>Business Address</li>
                     <li class="flex listElement"><img src="./BDDimages/bullet5.png" alt="bullet" class="bullet"/>Business Address Plus</li>
                 </ul>
-                <button class="btn-blue knowmore">KNOW MORE</button>
+                <button class="btn-blue knowmore mobile-btn">KNOW MORE</button>
             </div>
         </div>    
 
@@ -157,29 +162,36 @@
     </div>
     <!--end join bdd-->
 
+
     <!--Start stats section-->
-    <div class="flex stat">
+    <div class="flex flexcolumn stat">
         <h3 class="statheader" >BDD IS THE PREFERRED HUB FOR:</h3>
-        <div class="flex staticons">
-            <div class="flex statinfo">
-                <img src="./BDDimages/home_community.png" alt="appstore" class="homeicon" />
-                <div ><p class="members">1500+</p></div>
-                <div class="stattext"><p>COMMUNITY MEMBERS</p></div>
+        <div class="flex center staticons mobile">
+
+            <div class="flex space-around mobile-row">
+                <div class="flex flexcolumn statinfo">
+                    <img src="./BDDimages/home_community.png" alt="home_community" class="homeicon" />
+                    <div ><p class="members">1500+</p></div>
+                    <div class="stattext"><p>COMMUNITY MEMBERS</p></div>
+                </div>
+                <div class="flex flexcolumn statinfo ">
+                    <img src="./BDDimages/home_events.png" alt="home_events" class="homeicon" />
+                    <div><p class="events">700+</p></div>
+                    <div class="stattext"><p>EVENTS PER YEAR</p></div>
+                </div>
             </div>
-            <div class="flex statinfo">
-                <img src="./BDDimages/home_events.png" alt="appstore" class="homeicon" />
-                <div><p class="events">700+</p></div>
-                <div class="stattext"><p>EVENTS PER YEAR</p></div>
-            </div>
-            <div class="flex statinfo">
-                <img src="./BDDimages/home_support.png" alt="appstore" class="homeicon" />
-                <div ><p class="support">140+</p></div>
-                <div class="stattext"><p>SMES AND SUPPORT ORGANIZATIONS</p></div>
-            </div>
-            <div class="flex statinfo">
-                <img src="./BDDimages/home_vc.png" alt="appstore" class="homeicon" />
-                <div ><p  class="percentage">60%</p></div>
-                <div class="stattext"><p>OF BEIRUT'S VENTURE CAPITAL FUNDS & ACCELERATORS</p></div>
+
+            <div class="flex space-around mobile-row">
+                <div class="flex flexcolumn statinfo ">
+                    <img src="./BDDimages/home_support.png" alt="home_support" class="homeicon" />
+                    <div ><p class="support">140+</p></div>
+                    <div class="stattext"><p>SMES AND SUPPORT ORGANIZATIONS</p></div>
+                </div>
+                <div class="flex flexcolumn statinfo">
+                    <img src="./BDDimages/home_vc.png" alt="home_vc" class="homeicon" />
+                    <div ><p  class="percentage">60%</p></div>
+                    <div class="stattext"><p>OF BEIRUT'S VENTURE CAPITAL FUNDS & ACCELERATORS</p></div>
+                </div>
             </div>
         </div>
     </div>
@@ -188,7 +200,7 @@
     <!--Start trending-->
     <div class="flex flexcolumn aligncenter">
         <h2 class="trending">WHAT'S TRENDING</h2>
-        <button class="btn-blue visitblog">VISIT OUR BLOG</button>
+        <button class="btn-blue visitblog mobile-btn2">VISIT OUR BLOG</button>
     </div>
     <!--End trending-->
 
@@ -197,23 +209,23 @@
     <div class="flex programs">
         <div class="flex space-around">
 
-            <div class="flex academy">
-                <img src="./BDDimages/logo-academy.png" alt="appstore" class="academysection" />
+            <div class="flex flexcolumn academy ">
+                <img src="./BDDimages/logo-academy.png" alt="academy-logo" class="academysection" />
                 <p class="academytext">Providing programs to bridge the gap between the existing education providers and the long-term requirements of the job market.</p>
             </div>
 
-            <div class="flex learning">
-                <img src="./BDDimages/10.png" alt="appstore" class="youthsection size" />
+            <div class="flex flexcolumn learning ">
+                <img src="./BDDimages/10.png" alt="youth-logo" class="youthsection size" />
                 <h4 class="icontitle">The Youth Track</h4>
             </div>
 
-            <div class="flex learning">
-                <img src="./BDDimages/11.png" alt="appstore" class="universitysection size" />
+            <div class="flex flexcolumn learning ">
+                <img src="./BDDimages/11.png" alt="university-logo" class="universitysection size" />
                 <h4 class="icontitle">The University Track</h4>
             </div>
 
-            <div class="flex learning">
-                <img src="./BDDimages/14.png" alt="appstore" class="learningsection size" />
+            <div class="flex flexcolumn learning">
+                <img src="./BDDimages/14.png" alt="learning-logo" class="learningsection size" />
                 <h4 class="icontitle">The Continuous Learning Track</h4>
             </div>
 
@@ -222,7 +234,82 @@
     </div>    
     <!--End Blog-->
 
+    <!--Start footer-->
+    <footer class="flex flexcolumn " >
+        <div class="footer-titles flex">
+            <div>
+                SITEMAP
+            </div>
+            <div class="give-margin">
+                SUBSCRIBE TO OUR MAILING LIST
+            </div>
+        </div>
 
+        <div class="footer-contents flex space-around">
+            <div class="flex flexcolumn">
+                <p class="list-title">Discover BDD</p>
+                <ul class="footer-list flex flexcolumn">
+                    <li class="footerlist-ele">Our Winning Formula</li>
+                    <li class="footerlist-ele">Social Well Being</li>
+                    <li class="footerlist-ele">Our Story</li>
+                    <li class="footerlist-ele">Community Members</li>
+                    <li class="footerlist-ele">Partners</li>
+                </ul>
+            </div>
+
+            <div class="flex flexcolumn">
+                <p class="list-title">Our Products & Services</p>
+                <ul class="footer-list flex flexcolumn">
+                    <li class="footerlist-ele">Private Offices</li>
+                    <li class="footerlist-ele">Co-Working Spaces</li>
+                    <li class="footerlist-ele">Meeting & Event Spaces</li>
+                    <li class="footerlist-ele">Virtual Offices</li>
+                </ul>
+            </div>
+            <div class="flex flexcolumn">
+                <p class="list-title">Other pages</p>
+                <ul class="footer-list flex flexcolumn">
+                    <li class="footerlist-ele">Blog</li>
+                    <li class="footerlist-ele">Events</li>
+                    <li class="footerlist-ele">BDD Academy</li>
+                    <li class="footerlist-ele">In the News</li>
+                    <li class="footerlist-ele">Work With Us</li>
+                </ul>
+            </div>
+            <div class="flex flexcolumn email">
+
+                <button class="btn-blue subscribe">Subscribe</button>
+                <input type="text" class="text-line" placeholder="Email Address"/>
+                <div class="flex">
+                    <i class="fa fa-envelope"></i>
+                    <div class="contact">bdd@beirutdigitaldistrict.com</div>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-phone"></i>
+                    <div class="contact" >+961 1 66 09 41</div>
+                </div>
+                <div class="download-app">Download our mobile app</div>
+                <div class="flex">
+                    <div class="col1"><img src="./BDDimages/app-store.png" alt="appstore" class="store-footer" /></div>
+                    <div class="col2"><img src="./BDDimages/google-play.png" alt="googleplay" class="store-footer"/></div>
+                </div>
+                <div class="flex">
+                    <div class="policy">Terms of Use</div>
+                    <div class="policy">Privacy Policy</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex space-between bottom-footer">
+            <div class="left-bottom">© 2020 Beirut Digital District. By Webneoo</div>
+            <ul class="flex space-around right-bottom " style="list-style: none;">
+                <li><i class="fa fa-facebook fa-style" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram fa-style"></i></li>
+                <li><i class="fa fa-twitter fa-style"></i></li>
+                <li><i class="fa fa-linkedin fa-style"></i></li>
+            </ul>
+        </div>
+    </footer>
+    <!--end-->
 
   </body>
 </html>

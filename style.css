@@ -3,59 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-/*logo*/
-img {
-    height: 120%;
-  }
-
-/* Nav Bar*/
-/*take logo to the extreme left and the list to the extreme right*/
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    box-sizing: border-box;
-    
-  }
-li{
-    cursor: pointer;
-}
-.links {
-list-style: none; /*removes bottuns*/
-display: flex;
-/*center them horizontally and vertically*/
-justify-content: center;
-align-items: center;
-font-size: 1.4vmax;
-color:black;
-font-weight: bold;
 }
 
-/* subclass in the list*/
-.links > li {
-    /* to have spacing between elements*/
-      margin-right: 20px;
-    }
-
-.links > li:last-child {
-    margin-right: 0px;
-    }
-.btn {
-    width: 7vmax;
-    height: 3vmax;
-    padding: 5%;
-    border: none;
-    border-radius: 20px;
-}
-    
-.btn-blue {
-background-color: cornflowerblue;
-color: #fff;
-font-weight: bold;
-font-size: 70%;
-}
+/* flex */
 .flex{
     display:flex;
 }
@@ -65,11 +15,61 @@ font-size: 70%;
 .aligncenter{
     align-items: center;
 }
+.end{
+    justify-content: flex-end;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+/*****************************/
+
+/*Hero section*/
+img {
+    height: 120%;
+}
+.top-nav {
+    height: 80px;
+    box-sizing: border-box;   
+}
+li{
+    cursor: pointer;
+}
+.links {
+list-style: none; 
+align-items: center;
+font-size: 1.15vmax;
+color:white;
+font-weight: bold;
+}
+.links > li {
+    margin-right: 20px;
+}
+.links > li:last-child {
+    margin-right: 0px;
+}
+.btn-joinus {
+    width: 7vmax;
+    height: 3vmax;
+    padding: 5%;
+    border: none;
+    border-radius: 20px;
+}
+.btn-blue {
+background-color: cornflowerblue;
+color: #fff;
+font-weight: bold;
+font-size: 70%;
+}
 .logo{
     width: 6vmax;
     height: 10vmax;
 }
-
 .arrow{
 	width: 0;
 	height: 0;
@@ -79,8 +79,6 @@ font-size: 70%;
     align-self: center;
     margin-left: 2px;
 }
-
-
 .hero {
     background: url("./BDDimages/slide1.jpg");
     opacity: 0.7;
@@ -89,12 +87,8 @@ font-size: 70%;
     background-position: center;
     color: #fff;
     position: relative;
-  }
-
+}
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
     align-items: center;
     padding: 20vh 5vw 20vh 5vw;
 }
@@ -116,32 +110,28 @@ font-size: 70%;
 .dot:hover{
     background-color:blue;
 }
-
 .hero-heading {
     text-align: center;
-    font-size: 50px;
-    
-  }
+    font-size: 50px;  
+}
 .container {
 padding: 3vh 5vw;
 width: 100%;
 }
+/*****************************/
 
+
+/* foundations section*/
 .foundations{
     padding: 30px 0px;
     background-color:#F2F3F4;
-    display:flex;
-    flex-direction: column;
 }
 .foundationsheading{
     text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
 }
-.info{
-    display: flex;
-    justify-content: space-around;
-}
+
 .moreinfo{
     cursor: pointer;
     width: 18vw;
@@ -166,13 +156,16 @@ width: 100%;
 }
 .title{
     color: black;
-    font-size: 4vmin;
+    font-size: 4vh;
     font-weight: bold;
 }
 .paragraph{
     color:grey;
-    font-size: 2.7vmin;
+    font-size: 2.9vh;
 }
+/****************************/
+
+/*vision section*/
 .vision{
     background: url("./BDDimages/parallax-4.jpg");
     background-size: cover;
@@ -217,7 +210,6 @@ width: 100%;
     position:absolute;
 }
 .rightarrow{
-
     width: 0; 
     height: 0; 
     border-top: 10px solid transparent;
@@ -225,18 +217,15 @@ width: 100%;
     border-left: 12px solid #3498DB ;
     position:absolute;
 }
+/****************************/
 
-
+/*join BDD section*/
 .join{
     padding-top: 10vh;
     padding-bottom: 20vh;
     flex-direction: column;
-    padding-right: 2vw;
-    
-    
+    padding-right: 2vw;   
 }
-
-
 .joinheader{
     font-weight: bold;
     font-size: 2.5vmax;
@@ -258,20 +247,19 @@ width: 100%;
     box-sizing: border-box;
     margin: 1vw;
     flex-direction: column;
-
 }
 .joinBDDlist{
     list-style: none; /*removes bottuns*/
     flex-direction: column;
 }
 .listtitle{
-    font-size: 3vmin;
+    font-size: 3vh;
     font-weight: bold;
 }
 .listElement{
     color: #515A5A;
     margin-top: 15%;
-    font-size: 2.5vmin;
+    font-size: 2.8vh;
 }
 .bullet{
     height: 15px;
@@ -284,16 +272,13 @@ width: 100%;
     font-weight: bold;
     color: grey;
 }
-.end{
-    justify-content: flex-end;
-}
 .store{
     width: 9vw;
     height: 6vh;
     margin-left: 1vw;
     cursor: pointer;
 }
-
+/* know more bottun*/
 .knowmore{
     margin-top: 10vh;
     padding: 3%;
@@ -302,25 +287,24 @@ width: 100%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 2.5vmin;
+    font-size: 2.5vh;
     z-index: 1;
 }
+/****************************/
 
-
+/*Stat section*/
 .stat{
-    flex-direction: column;
     text-align: center;
     background: url("./BDDimages/parallax-light.jpg");
     background-repeat: no-repeat;
     background-position: 50% -54px;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     padding-top: 10vh;
     padding-bottom: 10vh;
     color: #fff;
     position: relative;
-    margin-bottom: 10vh;
-    
+    margin-bottom: 10vh;    
 }
 .statheader{
     margin-bottom: 2.5rem;
@@ -332,7 +316,6 @@ width: 100%;
     text-align: center;
 }
 .staticons{
-    justify-content: space-around;
     padding: 1max;
 }
 .homeicon{
@@ -340,13 +323,12 @@ width: 100%;
     height: 15vh;
 }
 .statinfo{
-    flex-direction: column;
     width: 20vh;
     align-items: center;
     text-align: center;
     padding: 0vh 6vmax;
+    margin: 0vh 5vw;
 }
-
 .members{
     -webkit-text-stroke-color: #009a9e;
     -webkit-text-size-adjust: 100%;
@@ -410,8 +392,26 @@ width: 100%;
     font-size: 2.5vmin;
     font-weight: bolder;
 }
+/****************************/
+
+/*What's trending*/
+.visitblog{
+    width:15%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+.trending{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+/****************************/
 
 
+/*programs section*/
 .programs{
     background: url("./BDDimages/parallax-7.jpg");
     opacity: 0.9;
@@ -427,23 +427,12 @@ width: 100%;
     flex-direction: column;
     align-items: center;
 }
-.space-around{
-    justify-content: space-around;
-}
-
-.clear {
-    clear: both;
-    display: block;
-    height: 0;
-    width: 100%;
-}
 .academy{
-    width: 30%;
-    flex-direction: column;
+    width: 35%;
+    margin-left: 6vw;
 }
 .learning{
-    width: 12%;
-    flex-direction: column;
+    width: 18%;
     align-items: center;
 }
 .academysection{
@@ -463,30 +452,154 @@ width: 100%;
     font-size: 3vmin;
     margin-top: 2vh;
 }
-
 .clickprograms {
     width:30vmax;
-    height: 5vmax;
+    height: 3.6vmax;
+    padding: 1%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    margin-top: 5vh;
+}
+/****************************/
+
+
+/*footer section*/
+footer{
+    width:100vw;
+    background-color: #212121;
+    padding: 10vh 4vw;
+}
+.footer-titles{
+    justify-content: space-between;
+    color: gainsboro;
+    padding-right: 7vw;
+    font-weight: bold;
+}
+.footer-list{
+    list-style: none;
+    padding-left: 1vw;
+    color: white; 
+}
+.footerlist-ele{
+    margin-top: 2vh;
+    font-size: 2.5vmin;
+    letter-spacing: 1px;
+}
+.list-title{
+    color:gray;
+    font-size: 2.8vmin;
+    font-weight: bolder;
+    margin-top: 4vh;
+}
+.email{
+    width: 30%;
+}
+
+.give-margin{
+    margin-right: 50px;
+}
+.subscribe {
+    width:8vmax;
+    height: 3vmax;
     padding: 1%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    margin-top: 3vh;
+    align-self: flex-end;
+    z-index: 1;
+    position: absolute;
 }
-
-
-.visitblog{
-    width:15%;
-    padding: 14px 15px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 10vh;
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    margin-top: 13%;
+    margin-bottom: 5%;
 }
-
-.trending{
-    font-size: 20px;
+input[type="text"]::placeholder {  
+    padding-left: 5%;
+} 
+.contact{
+    color: #fff;
     font-weight: bold;
-    margin-bottom: 5vh;
+    font-size: 2.7vmin;
+    margin-left: 5%;
+    cursor: pointer;
 }
+.fa{
+    color: #0078BE;
+    height: 1.1rem;
+    width: 20px;
+    text-align: left;
+    margin-right: 3%;
+    display: inline-block;
+    font-size: inherit;
+    margin-bottom: 5%;
+}
+.download-app{
+    color:#646464;
+    font-family: TheMixBlackPlain;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+.store-footer{
+    width: 12vw;
+    height: 8vh;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+.policy{
+    color:#f9f9f9;
+    letter-spacing: 1px;
+    font-family: TheMixSemiBold;
+    font-weight: bold;
+    font-size: 1vmax;
+    margin-right: 5%;
+}
+.fa-style{
+    color:#f9f9f9;
+    margin-left: 1.5vw;
+    margin-top: 7vh;
+    
+}
+.left-bottom{
+    margin-top: 7vh;
+    color: #9d9d9d;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 2.2vh;
+}
+/**************************/
 
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        flex-direction: column;
+    }
+    .mobile-width{
+        width:60vw;
+        margin-left: 20vw;
+        font-weight: bolder;
+    }
+    .mobile-btn{
+        width: 20vw;
+    }
+    .mobile-btn2{
+        width: 50vw;
+    }
+    .mobile-row{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
